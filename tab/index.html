@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Unit Converter">
+    <meta name="keywords" content="Length,Weight,Mass,Temperature,Volume,Area,Data">
+    <!-- Designed and Developed By Gadget_Vishwa  -->
+</head>
+<body>
+    
+<label class="switch-container">
+    <input type="checkbox" id="modeToggle">
+  <span class="slider"></span>
+</label>
+    <h2 class="heading">Unit Converter</h2>
+    <div class="container">
+        <div class="tab_box">
+            <button class="tab_btn active">Length</button>
+            <button class="tab_btn">Weight</button>
+            <button class="tab_btn">Temperature</button>
+            <button class="tab_btn">Data</button>
+            <button class="tab_btn">Volume</button>
+            <button class="tab_btn">Area</button>
+            <div class="line"></div>
+        </div>
+        <div class="content_box">
+            <div class="content active">
+                <div class="temp-container">
+                    <div class="box">
+                        <input type="number"   id="fromLen" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromLenS" class="fromunit">
+                            <option value="millimetre">Millimetre (mm)</option>
+                            <option value="centimetre">Centimetre (cm)</option>
+                            <option value="metre">Metre (m)</option>
+                            <option value="inch">Inch (in)</option>
+                            <option value="foot">Foot (ft)</option>
+                            <option value="yard">Yard (yd)</option>
+                            <option value="lightyear">Light Year (ly)</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div id="toLen" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toLenS" class="tounit">
+                            <option value="millimetre">Millimetre (mm)</option>
+                            <option value="centimetre">Centimetre (cm)</option>
+                            <option value="metre">Metre (m)</option>
+                            <option value="inch">Inch (in)</option>
+                            <option value="foot">Foot (ft)</option>
+                            <option value="yard">Yard (yd)</option>
+                            <option value="lightyear">Light Year (ly)</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+                
+            <div class="content">
+                <div class="temp-container">
+                    <div class="box">
+                        <input type="number"   id="fromWeight" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromWeightS" class="fromunit">
+                            <option value="milligram">Milligram (mg)</option>
+                            <option value="gram">Gram (g)</option>
+                            <option value="kilogram">Kilogram (kg)</option>
+                            <option value="ounce">Ounce (oz)</option>
+                            <option value="pound">Pound (lb)</option>
+                            <option value="tonne">Tonne (t)</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div id="toWeight" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toWeightS" class="tounit">
+                            <option value="milligram">Milligram (mg)</option>
+                            <option value="gram">Gram (g)</option>
+                            <option value="kilogram">Kilogram (kg)</option>
+                            <option value="ounce">Ounce (oz)</option>
+                            <option value="pound">Pound (lb)</option>
+                            <option value="tonne">Tonne (t)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="temp-container">
+                    <div class="box" >
+                        <input type="number" min="-999" max="999"   id="fromTemp" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromTempS" class="fromunit">
+                            <option value="celsius">°C</option>
+                            <option value="kelvin">°k</option>
+                            <option value="fahrenheit">°F</option>
+                        </select>
+                    </div>
+                    
+                    <div class="box" >
+                        <div id="toTemp" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toTempS" class="tounit">
+                            <option value="celsius">°C</option>
+                            <option value="kelvin">°k</option>
+                            <option value="fahrenheit">°F</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="content">
+                <div class="temp-container">
+                    <div class="box">
+                        <input type="number"   id="fromData" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromDataS" class="fromunit">
+                            <option value="bit">Bit (b)</option>
+                            <option value="byte">Byte (B)</option>
+                            <option value="kilobyte">Kilobyte (KB)</option>
+                            <option value="megabyte">Megabyte (MB)</option>
+                            <option value="gigabyte">Gigabyte (GB)</option>
+                            <option value="terabyte">Terabyte (TB)</option>
+                            <option value="petabyte">Petabyte (PB)</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div id="toData" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toDataS" class="tounit">
+                            <option value="bit">Bit (b)</option>
+                            <option value="byte">Byte (B)</option>
+                            <option value="kilobyte">Kilobyte (KB)</option>
+                            <option value="megabyte">Megabyte (MB)</option>
+                            <option value="gigabyte">Gigabyte (GB)</option>
+                            <option value="terabyte">Terabyte (TB)</option>
+                            <option value="petabyte">Petabyte (PB)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="temp-container">
+                    <div class="box">
+                        <input type="number"   id="fromVolume" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromVolumeS" class="fromunit">
+                            <option value="cubicMeter">Cubic Meter (m³)</option>
+                            <option value="liter">Liter (L)</option>
+                            <option value="milliliter">Milliliter (mL)</option>
+                            <option value="cubicCentimeter">Cubic Centimeter (cm³)</option>
+                            <option value="cubicInch">Cubic Inch (in³)</option>
+                            <option value="cubicFoot">Cubic Foot (ft³)</option>
+                            <option value="cubicYard">Cubic Yard (yd³)</option>
+                            <option value="gallon">Gallon (gal)</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div id="toVolume" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toVolumeS" class="tounit">
+                            <option value="cubicMeter">Cubic Meter (m³)</option>
+                            <option value="liter">Liter (L)</option>
+                            <option value="milliliter">Milliliter (mL)</option>
+                            <option value="cubicCentimeter">Cubic Centimeter (cm³)</option>
+                            <option value="cubicInch">Cubic Inch (in³)</option>
+                            <option value="cubicFoot">Cubic Foot (ft³)</option>
+                            <option value="cubicYard">Cubic Yard (yd³)</option>
+                            <option value="gallon">Gallon (gal)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="temp-container">
+                    <div class="box">
+                        <input type="number"   id="fromArea" class="inputText" placeholder="Type Here To">
+                        <br>
+                        <select id="fromAreaS" class="fromunit">
+                            <option value="squareMeter">Square Meter (m²)</option>
+                            <option value="squareKilometer">Square Kilometer (km²)</option>
+                            <option value="squareMile">Square Mile (mi²)</option>
+                            <option value="squareYard">Square Yard (yd²)</option>
+                            <option value="squareFoot">Square Foot (ft²)</option>
+                            <option value="squareInch">Square Inch (in²)</option>
+                            <option value="hectare">Hectare (ha)</option>
+                            <option value="acre">Acre (ac)</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div id="toArea" class="displayText">
+                            Convert Unit...
+                        </div>
+                        <select id="toAreaS" class="tounit">
+                            <option value="squareMeter">Square Meter (m²)</option>
+                            <option value="squareKilometer">Square Kilometer (km²)</option>
+                            <option value="squareMile">Square Mile (mi²)</option>
+                            <option value="squareYard">Square Yard (yd²)</option>
+                            <option value="squareFoot">Square Foot (ft²)</option>
+                            <option value="squareInch">Square Inch (in²)</option>
+                            <option value="hectare">Hectare (ha)</option>
+                            <option value="acre">Acre (ac)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 style="bottom: 10px; margin-top: 20px;"><center>Designed By<a style="text-decoration: none;" href="https://www.bit.ly/Vishwa_Portfolio"><span style="color: deeppink;" title="Developer" > @Gadgegt_Vishwa</span></a> </center></h5>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
